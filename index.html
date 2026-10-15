@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Machine Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            text-align: center;
+        }
+
+        h1 {
+            color: #222;
+        }
+
+        #dashboard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 220px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #bbb;
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Machine Dashboard</h1>
+
+    <button onclick="loadMachines()">Load Machines</button>
+
+    <div id="message"></div>
+    <div id="dashboard"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
